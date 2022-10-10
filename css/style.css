@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(89, 109, 72);
+  font-weight: 800;
+}
+
+button {
+  padding: 10px 50px;
+  background-color: rgb(89, 109, 72);
+  border-radius: 10px;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 900;
+  border: 0;
+}
+
+@font-face {
+  font-family: norseBold;
+  src: url(/fonts/Norse-Bold.otf);
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 30px;
+  width: 100%;
+
+}
+
+input {
+  border-radius: 5px;
+  border: 2px solid rgb(231, 229, 229);
+  padding: 8px;
+  width: 250px;
+}
+
+input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+input:invalid {
+  border: 2px solid rgba(255, 0, 0, 0.713);
+  outline: none;
+}
+
+li {
+  color: rgb(89, 88, 88);
+  flex: 5;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-evenly;
+  list-style: none;
+  max-width: 600px;
+}
+
+.bottom {
+  padding: 30px 40px 300px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.header {
+  background-image: url("/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 40%;
+}
+
+.logo-section {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-family: norseBold, serif;
+  font-size: 2.5em;
+  height: 150px;
+  justify-content: center;
+  margin-top: 300px;
+  padding: 10px;
+}
+
+.logo-section img {
+  height: 125px;
+}
+
+.footer {
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-size: 0.9rem;
+  height: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form-title {
+  padding-left: 40px;
+  font-size: 1.4em;
+  color: rgb(89, 88, 88);
+}
+
+.top,
+.bottom {
+  background-color: rgb(241, 241, 241);
+}
+
+.top {
+  padding: 150px 40px 100px;
+}
